@@ -30,7 +30,7 @@ body {
 
 .hero-content h1 {
     font-size: 3em;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .hero-content p {
@@ -50,7 +50,7 @@ body {
 }
 
 .cta-button:hover {
-    animation: bounce 1s ease;
+    animation: bounce 2s ease;
 }
 
 .features {
@@ -220,11 +220,86 @@ footer a {
 }
 
 @media (max-width: 768px) {
+    .hero {
+        padding: 40px 15px;
+    }
     .hero-content  h1 {
         font-size: 2em;
     }
     .hero-content p {
         font-size: 1em;
+    }
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+    .features {
+        padding: 40px 15px;
+    }
+    .features h2 {
+        font-size: 2em;
+    }
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .feature {
+        max-width: 100%;
+    }
+    .testimonials {
+        padding: 40px 15px;
+    }
+    .testimonials h2 {
+        font-size: 2em;
+    }
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .pricing {
+        padding: 40px 15px;
+    }
+    .pricing h2 {
+        font-size: 2em;
+    }
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .plan {
+        padding: 20px;
+    }
+    .price {
+        font-size: 1.5em;
+    }
+    .plan-button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 30px 10px;
+    }
+    .hero-content h1 {
+        font-size: 1.5em;
+    }
+    .hero-content p {
+        font-size: 0.9em;
+    }
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+    .features h2, .testimonials h2, .pricing h2 {
+        font-size: 1.5em;
+    }
+    .features h3, .plan h3 {
+        font-size: 1.2em;
+    }
+    .feature p, .testimonial p, .plan p {
+        font-size: 0.9em;
     }
 }
 
